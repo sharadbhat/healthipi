@@ -1,0 +1,6 @@
+google-auth
+google-auth-oauthlib
+inky
+Pillow
+requests
+tzdata; sys_platform == "win32"

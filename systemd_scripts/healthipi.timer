@@ -1,0 +1,8 @@
+[Unit]
+Description=Update HealthiPi every half hour
+
+[Timer]
+OnCalendar=*-*-* *:00,30:00
+
+[Install]
+WantedBy=timers.target

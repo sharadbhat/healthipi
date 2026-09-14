@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.test-tmp*/
+.uv-cache/
+.coverage
+htmlcov/
+*.egg-info/
+build/
+dist/
+
+# OAuth credentials and generated data.
+client_secret*.json
+token*.json
+health-cache.json
+healthipi_output.png

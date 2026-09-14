@@ -1,0 +1,8 @@
+[Unit]
+Description=Update HealthiPi
+After=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/home/pi/healthipi
+ExecStart=/home/pi/.virtualenvs/pimoroni/bin/python3 healthipi.py
