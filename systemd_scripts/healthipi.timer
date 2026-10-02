@@ -1,8 +1,10 @@
 [Unit]
-Description=Update HealthiPi every half hour
+Description=Update HealthiPi every half hour from 7 AM through midnight
 
 [Timer]
-OnCalendar=*-*-* *:00,30:00
+OnCalendar=*-*-* 07..23:00,30:00
+OnCalendar=*-*-* 00:00:00
+AccuracySec=1s
 
 [Install]
 WantedBy=timers.target

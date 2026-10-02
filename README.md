@@ -58,10 +58,11 @@ To change the timezone or goals, edit `TIMEZONE`, `STEPS_GOAL` (11,000), `CALORI
 
 ## Run automatically
 
-The included timer runs at 00 and 30 minutes past every hour:
+The display updates every half hour from 7:00 AM through 11:30 PM, with one
+final update at midnight.
 
 ```bash
-sudo cp systemd_scripts/healthipi.* /etc/systemd/system/
+sudo cp systemd_scripts/*.service systemd_scripts/*.timer /etc/systemd/system/
 sudo systemctl daemon-reload
 sudo systemctl enable --now healthipi.timer
 ```
